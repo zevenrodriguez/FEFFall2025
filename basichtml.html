@@ -14,7 +14,8 @@
                 background-color: greenyellow;
             }
         </style>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" media="only screen and (min-width:480px)">
+        <link href="css/mobile.css" rel="stylesheet" media="only screen and (max-width:479px)">
     </head>
     <body>
         <header>
@@ -25,11 +26,18 @@
             <h5>h5</h5>
             <h6>h6</h6>
             <!-- not a tag <h7>h7</h7> -->
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li><a href="#story">Section 1</a></li>
+                    <li><a href="#gallery">Section 2</a></li>
+                    <li><a href="">Section 3</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section>
+            <section id="story">
                 <h2>Story</h2>
+                <section class="grid1">
                 <p>Once upon a time, in the chilly waters of the Arctic, three best friends lived near a big, sparkly iceberg.</p>
                 <p>
                     <!-- bold <b> vs strong <strong> is the preferred tag for accesibility -->
@@ -54,6 +62,7 @@
                 “And tomorrow,” said Nina, “we’ll find the Moonlight Lagoon!”
                 The three friends snuggled together on the iceberg, dreaming of their next magical journey.
                 </p>
+                </section>
             </section>
             <section>
                 <h3> Nina the Narwhal</h3>
@@ -82,10 +91,16 @@
                     <li>Fun Fact: Nina loves to hum tunes while swimming and can make bubbles dance to her music!</li>
                 </ol>
             </section>
-            <section>
+            <section id="gallery">
                 <h3>Image Gallery</h3>
+                <figure>
                 <img src="images/narwhal.jpg" alt="Narwhal relative">
+                <figcaption>Narwhal</figcaption>
+                </figure>
+                <figure>
                 <img src="https://raw.githubusercontent.com/zevenrodriguez/CIM343-643-FrontEndFundemenals-ClassExamples/refs/heads/main/cssexamples/images/narwhal.jpg" alt="narwhal absolute link">
+                <figcaption>narwhal</figcaption>
+                </figure>
             </section>
         </main>
         <footer></footer>

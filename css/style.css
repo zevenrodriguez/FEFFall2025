@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 body{
     background-color: aquamarine;
@@ -31,12 +33,45 @@ header{
 
 main{
     width: 960px;
+    /* height: 300px; */
+    height: auto;
     margin: 0 auto; /* 0 = top and bottom and auto = left and right */
-    /* padding: 20px; */
+    padding: 20px;
 }
 
 footer{
+    width: 960px;
+    margin: 0 auto; /* 0 = top and bottom and auto = left and right */
+    padding: 20px;
+    background-color: coral;
+}
 
+nav{
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav ul{
+    /* display: block; */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav ul li{
+    list-style: none;
+    /* display: inline-block; */
+}
+
+nav ul li a{
+    font-size: 20px;
+    color:darkseagreen;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+nav ul li a:hover{
+    color: black;
 }
 
 h1{
@@ -49,4 +84,9 @@ h2{
     color: pink;
     font-weight: 200;
     font-style: italic;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

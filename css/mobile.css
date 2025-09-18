@@ -1,0 +1,32 @@
+@import "style.css";
+
+
+header, main, footer{
+    width: 360px;
+}
+
+nav{
+    width: auto;
+    width: 100%;
+}
+
+nav ul{
+    /* display: block; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+nav ul li a{
+    font-size: 30px;
+}
+
+.grid1{
+    display: block;
+    
+}
+.grid1 > p{
+    margin-bottom: 20px;
+}
